@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+<style>
+   a{
+      font-size:25px;
+
+  color:blue;
+  font-weight:幼圆，宋体；
+  pdding：5px；
+	 }
+
+   h1{
+    font-size:25px;
+  
+  color:pink;
+  font-weight:幼圆，宋体；
+  pdding：5px；
+    }
+  
+	</style>
+</head>
+ <body>
+  <a>
+tracert:路由跟踪;<br>
+ping:检测网络;<br>
+cut:剪切打开网址里面的东西;<br>
+Grep:查找一个文件里面的东西，例如: grep 'ab' yinyu(查找英语文件里面以 ab 开头的单词有哪些);<br>
+grep '^ab' yinyu:查找以 ab 开头的单词;<br>
+grep '^ab' yinyu |wc:统计有多少个以 ab 开头的单词:<br>
+grep 'ab$' yinyu:查找以 ab 结尾的单词;<br>
+grep 'ab$' yinyu |wc:统计有多少个以 ab 结尾的单词;<br>
+cut --delimiter='/' -f1 yinyu: j: 剪切文本;<br>
+cut --delimiter='/' -f1 yinyu |grep 'ing$':查找以 ing 结尾的单词;<br>
+cut --delimiter='/'-f1 yinyu |grep 'ing$'|wc:统计以ing 结尾的单词有哪些。<br>
+</a >
+<h1>
+cet6.txt中以'x'开头的单词最少<br>
+ grep '^x' /d/ligq/txt/cet6.txt | wc<br>
+      1       1     31<br>
+cet6.txt中以's'开头的单词最多<br>
+grep '^s' /d/ligq/txt/cet6.txt | wc<br>
+    646     647   34294<br>
+
+</h1>
+
+ </body>
+</html>
